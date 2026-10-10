@@ -89,9 +89,10 @@ Swastik_Demo/
 ## Hospital details
 
 **Swastik Hospital** (स्वस्तिक हॉस्पिटल)
-Plot No. 3, Shamshabad Road, Kaveri Vihar Phase 1, Tajganj, Agra, Uttar Pradesh 282001
-Phone: +91 87914 83838 · +91 81938 38152
-Open 24 hours, 7 days a week
+
+- **Address:** Plot No. 3, Shamshabad Road, Kaveri Vihar Phase 1, Tajganj, Agra, Uttar Pradesh 282001
+- **Phone:** +91 87914 83838 · +91 81938 38152
+- **Hours:** Open 24 hours, 7 days a week
 
 ## Licence
 
