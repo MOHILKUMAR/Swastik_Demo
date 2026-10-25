@@ -14,6 +14,7 @@ The whole site is a single `index.html` file: no frameworks, no build step, no d
 - **Mobile-first and responsive** – layouts adapt from large desktops down to small phones, with a collapsible menu and a floating "Call now" button on mobile.
 - **Bilingual** – English content with Hindi (Devanagari) labels for the hospital name, services and doctors, using the *Tiro Devanagari Hindi* font.
 - **Built to get patients in touch** – tap-to-call phone numbers everywhere, a 24-hour emergency bar, one-tap Google Maps directions and an embedded map.
+- **Online OPD tokens** – patients can book a token and track the live queue through [MediQueue](https://mediqueue-5b5.pages.dev/), linked from the hero, the menu, a dedicated section and the footer.
 - **Photo gallery with lightbox** – filter photos by *All / Outside / Inside*, open them full-screen, and move through them with the on-screen buttons or the arrow keys; `Esc` closes.
 - **Accessible** – semantic sections, ARIA labels on the menu, gallery and lightbox, visible focus outlines, and support for `prefers-reduced-motion`.
 - **SEO ready** – meta description, Open Graph tags for link previews, and `schema.org/Hospital` structured data (address, phone, geo-location, opening hours, specialties).
@@ -29,6 +30,7 @@ The whole site is a single `index.html` file: no frameworks, no build step, no d
 | About | The hospital, the doctor couple who run it, and facilities |
 | Services | Normal & caesarean delivery, painless delivery, CTG/NST monitoring, ultrasound, gynaecology & laparoscopy, infertility care, critical care, anaesthesia & pain relief, general medicine |
 | Doctors | Dr. Vandana Jain (Obstetrics & Gynaecology) and Dr. Ankit Jain (Anaesthesia & Critical Care) |
+| Online OPD token | How token booking works, with *Book a token* and *Track my token* buttons that open MediQueue, plus an emergency reminder |
 | Gallery | Filterable photo grid with a full-screen viewer |
 | Reviews | Google rating summary, common review themes, selected patient reviews |
 | Contact | Address, phone numbers, hours, directions and an embedded Google Map |
@@ -73,6 +75,7 @@ Everything is in `index.html`:
 - **Colours and fonts** – the `:root` block at the top of the `<style>` section (`--blue`, `--red`, `--font-display`, etc.).
 - **Phone numbers** – search for `tel:+91` and update every match (top bar, header, hero, contact, footer and the floating call button).
 - **Services, doctors, reviews** – edit the matching `<section id="...">` blocks (`services`, `doctors`, `reviews`).
+- **Token booking links** – search for `mediqueue-5b5.pages.dev` and update every match (token section and footer). MediQueue blocks being embedded in other sites (`X-Frame-Options: DENY`), so it is linked rather than shown in an iframe.
 - **Gallery photos** – edit the `photos` array in the script near the bottom of the file. Each entry has an image `id`, a caption (`cap`) and a category (`cat`: `inside` or `outside`).
 - **Search / social preview** – the `<meta>` tags and the `application/ld+json` block in the `<head>`.
 
